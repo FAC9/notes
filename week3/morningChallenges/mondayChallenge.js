@@ -37,6 +37,28 @@ const parseAddMultiplySubtract = passOutputsAsInputs(
 parseAddMultiplySubtract('1'); // 3
 
 // ---------------------------------------------------------------------------
+// Nori's Solution
+
+var passOutputsAsInputs = function() {
+  var funcs = Array.from(arguments).reverse();
+  return function(n){
+      return funcs.reduce(
+          function(prev,curr){
+              return curr(prev);
+          },n );
+  }
+};
+
+function add_one (n) { return n+1; }
+function less_one (n) { return n -1; }
+function multiply_two (n) { return n * 2; }
+function start (n) { return parseInt(n); }
+
+const parseAddMultiplySubtract = compose2(start, add_one, multiply_two, less_one);
+
+parseAddMultiplySubtract('1'); // 3
+
+// ---------------------------------------------------------------------------
 // Solution from board
 
 var compose = function(...arg) {
