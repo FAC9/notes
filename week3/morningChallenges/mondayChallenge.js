@@ -42,10 +42,10 @@ parseAddMultiplySubtract('1'); // 3
 var passOutputsAsInputs = function() {
   var funcs = Array.from(arguments).reverse();
   return function(n){
-      return funcs.reduce(
-          function(prev,curr){
-              return curr(prev);
-          },n );
+    return funcs.reduce(
+      function(prev,curr) {
+        return curr(prev);
+      }, n);
   }
 };
 
@@ -62,23 +62,23 @@ parseAddMultiplySubtract('1'); // 3
 // Solution from board
 
 var compose = function(...arg) {
-	var rev = arg.reverse();
-	return function(n) {
-		return rev.reduce(function(acc, element) {
-			console.log(acc);
-			return element(acc);
-		}, n);
-	}
+  var rev = arg.reverse();
+  return function(n) {
+    return rev.reduce(function(acc, element) {
+      console.log(acc);
+      return element(acc);
+    }, n);
+  }
 };
 
 var compose2 = function(...arg) {
-	var rev = arg
-	return function(n) {
-		return rev.reduce(function(acc, element) {
-			console.log(acc);
-			return element(acc);
-		}, n);
-	}
+  var rev = arg
+  return function(n) {
+    return rev.reduce(function(acc, element) {
+      console.log(acc);
+      return element(acc);
+    }, n);
+  }
 };
 
 function add_one (n) { return n+1; }
