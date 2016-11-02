@@ -15,15 +15,23 @@
 
 var asyncAddOne = function(x, cb) {
   setTimeout(function() {
-    if (typeof x !== 'number') return cb(new Error('need a number!'))
-    return cb(null, x + 2)
+    if (typeof x !== 'number') {
+      cb(new Error('need a number!'))
+      return ;
+    }
+    cb(null, x + 2)
+    return ;
   }, 200)
 }
 
 var asyncDouble = function(x, cb) {
   setTimeout(function() {
-    if (typeof x !== 'number') return cb(new Error('need a number!'))
-    return cb(null, x*2)
+    if (typeof x !== 'number') {
+      cb(new Error('need a number!'))
+      return ;
+    }
+    cb(null, x*2)
+    return ;
   }, 200)
 }
 
@@ -31,8 +39,12 @@ var asyncModSeven = function(x, cb) {
   // mod takes the remainder after division.
   // ie 5 mod 3 === 2 (5/3 === 1 remainder 2)
   setTimeout(function() {
-    if (typeof x !== 'number') return cb(new Error('need a number!'))
-    return cb(null, x % 7)
+    if (typeof x !== 'number') {
+      cb(new Error('need a number!'))
+      return ;
+    }
+    cb(null, x % 7)
+    return ;
   }, 200)
 }
 
@@ -50,6 +62,7 @@ var waterfall = function(arg, tasks, cb) {
     })
     return ;
   }
+  cb(null, arg);
 }
 
 waterfall(3, [
