@@ -1,4 +1,4 @@
-# Coding for everyone
+# Coding for everyone & Coding for Women Rota
 
   Date      |   Person 1   |   Person 2   |   Extra   |
 ------------|--------------|--------------|-----------|
