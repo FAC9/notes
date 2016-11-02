@@ -50,6 +50,7 @@ var waterfall = function(arg, tasks, cb) {
     })
     return ;
   }
+  cb(null, arg);
 }
 
 waterfall(3, [
