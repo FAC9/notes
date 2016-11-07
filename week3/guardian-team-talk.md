@@ -20,7 +20,21 @@ A/B testing (split testing): compare two versions of a website, see which one pe
 
 Unit testing: you know exactly what’s failed, makes it easy to debug
 
-### Code review
+### General info about the Guardian dev department
+
+* Around 50% of the 150 people working on the website are developers.
+* The Guardian dev team is smaller than the BBC team (one of the reasons why BBC website offers strict browser support). Also, NY Times have a big team of 400 developers.
+* Flexibility to move between different teams (e.g. Stephan changed from senior developer to product manager)
+* They are aiming to add, improve and update the existing website documentation, check the relevant docs in their GitHub repo [here](https://github.com/guardian/frontend) .
+
+### Information about the Guardian website
+
+* The website has 4 different versions to serve users around the globe.
+*  When requests come in, the responses are dealt with Fastly (which is a service that provides frequent caching among other things, however when content updates are necessary, the cache is forced to clear). Guardian doesn't have their own servers to handle content delivery, as this requires expensive infrastructure.
+* They use Scala in the back-end, which is a statically typed language (i.e. type checking is performed during compile-time as opposed to run-time).
+* Guardian is on Google AMP (short for Accelerated Mobile Pages). Google AMP have a JS library that you are able to use by adding components in the HTML headers of your page. The benefit is that the app is actually pre-rendered in Google results, so you have instant access to the page.
+
+## Code review
 
 PostCSS: lints your CSS (e.g. prefixes)
 
@@ -37,3 +51,5 @@ There is a performance cost each time you use ‘document.something’
 Use verbs in function names (what does it do?)
 - then can also use shorter local variable names (function tells you the context)
 - can avoid comments if your code is clear and var / function naming is informative
+
+Try to use *pure* functions to avoid having side effects in the global scope or other parts of a program (therefore, more scoped variables are better than fewer global ones).
