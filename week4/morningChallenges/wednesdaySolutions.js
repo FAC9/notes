@@ -1,4 +1,5 @@
-// Team's solutions to https://github.com/bradreeder/Node-Shell-Workshop
+// Team's solutions to https://github.com/bradreeder/Node-Shell-Workshop below.
+// To make these scripts executable: http://javascriptplayground.com/blog/2015/03/node-command-line-tool/
 
 // Peter & Will's Exercise 1:
 
