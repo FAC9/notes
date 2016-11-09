@@ -9,7 +9,7 @@ fs.readFile(process.argv[2], 'utf8', function(err, contents) {
    console.log(contents);
 });
 
-//  Esraa & Ewelinas Exercise 2:
+//  Esraa & Ewelinas Exercise 2 & 3:
 
 var fs = require('fs');
 
@@ -27,7 +27,7 @@ fs.readdir(process.cwd(), function (err, files) {
     console.log(fileName);
   });
 
-  // Nick & Marko's Exercise 3:
+  // Nick & Marko's Exercise 4:
 
   #!/usr/bin/env node
 var directories = process.cwd();
