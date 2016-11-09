@@ -1,4 +1,5 @@
-// Team's solutions to https://github.com/bradreeder/Node-Shell-Workshop
+// Team's solutions to https://github.com/bradreeder/Node-Shell-Workshop below.
+// To make these scripts executable: http://javascriptplayground.com/blog/2015/03/node-command-line-tool/
 
 // Peter & Will's Exercise 1:
 
@@ -9,7 +10,7 @@ fs.readFile(process.argv[2], 'utf8', function(err, contents) {
    console.log(contents);
 });
 
-//  Esraa & Ewelinas Exercise 2:
+//  Esraa & Ewelinas Exercise 2 & 3:
 
 var fs = require('fs');
 
@@ -27,7 +28,7 @@ fs.readdir(process.cwd(), function (err, files) {
     console.log(fileName);
   });
 
-  // Nick & Marko's Exercise 3:
+  // Nick & Marko's Exercise 4:
 
   #!/usr/bin/env node
 var directories = process.cwd();
