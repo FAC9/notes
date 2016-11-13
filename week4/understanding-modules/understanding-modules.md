@@ -33,7 +33,7 @@ But what if we want to access the ```noise``` function? Well, that's where ```mo
 ```
 module.exports = noise;
 ```
-Theoretically, ```noise``` would now available to us from inside ```main.js```, but we have no way to invoke it. We need to save ```require('.catModule.js')``` in a variable, so that we can refer to it.
+Theoretically, ```noise``` would now be available to us from inside ```main.js```, but we have no way to invoke it. We need to save ```require('.catModule.js')``` in a variable, so that we can refer to it.
 
 Since our entire cat module only does one thing, we could also call it ```noise```:
 ![](../../../Pictures/understanding-modules2.png)
@@ -50,9 +50,9 @@ And now that we have exported the ```noise``` function, we can invoke it inside 
 
 There would barely be any point in creating a separate cat module, if that module only contained one function. So lets put another one in there.
 
-This time, we'lll make a function that tells us which kind of toys a cat normally plays with.
+This time, we'll make a function that tells us which kind of toys a cat normally plays with.
 
-Now that we want to export more than one function from ```catModule.js```, we might as well turn ```module.exports``` into an object. Now that the whole cat module does more than just refer to the noise that a cat makes, it makes sense to rename this from ```catNoise``` to ```cats``` in ```main.js``` (in fact, to for consistency, it's best for this variable to be the same as the module's file name).
+Now that we want to export more than one function from ```catModule.js```, we might as well turn ```module.exports``` into an object. Now that the whole cat module does more than just refer to the noise that a cat makes, it makes sense to rename this from ```catNoise``` to ```cats``` in ```main.js``` (in fact, for consistency, it's best for this variable to be the same as the module's file name).
 
 And then, we'll have to change ```main.js``` to reflect this, by calling these as methods of the required module:
 ![](../../../Pictures/understanding-modules5.png)
