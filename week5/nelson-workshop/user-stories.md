@@ -25,10 +25,16 @@ when someone else joins your project, they won't be able to figure out why that 
 
 Given a broad requirement i.e. the FAC9 gitbook brief for our autocompleters, you need to come up with your own user stories in your teams.
 
+Sidenote: Design thinking:
+- Think about a problem
+- Find out the solutions that are already available
+- Start trying to solve the problem in your own context/in a fresh way
+
 ## How specific should they be
 
 There is no one answer to this, but here is some advice:
 1. Once you have your first story, try to break it down into smaller user stories. Hopefully this happens to the point where each story is a bitesize chunk. Each person/pair can then take each chunk and go away and research the best way to solve this before trying to do it themselves.
+
 
 2. Try to get to the point when you are testing one single thing, that has impact on other parts of the code. e.g. Knowing that a box exists on the page. Being able to type into a box.
 
