@@ -11,7 +11,7 @@ Week starting on...  |   Person   |
 5th Dec | Marina
 12th Dec | Marko
 19th Dec | Nick
-Reading weeks
+Reading weeks |
 9th Jan | Nora
 16th Jan | Peter
 23rd Jan | Steve
