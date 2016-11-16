@@ -38,7 +38,7 @@ fs.readFile(index.html, function(err, html) {
 Note index.html is now the value of the `file` argument, and the callback function is
 the value of the `cb` argument.
 
-When we call `fs.readFile` here, it is important to understand that we have *defined* a function as its second argument but even though we've executed `fs.readFile` the callback hasn't been executed yet. It's only defined. Callbacks are just functions that will be executed somewhere in the function they're passed into as arguments. They're a common pattern in asynchronous programming, but they can be used in synchronous code as well (like `forEach` below.)
+When we call `fs.readFile` here, it is important to understand that we have *defined* a function as its second argument but even though we've executed `fs.readFile` the callback hasn't been executed yet. It's only defined. Callbacks are just functions that will be executed somewhere in the function they're passed into as arguments. They're a common pattern in asynchronous programming, but they can be used in synchronous code as well.
 
 So, we've defined parameters for the callback, `err` and `file`, at its point of definition here, but they are currently just placeholder names in the same way that
 
