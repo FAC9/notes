@@ -4,6 +4,8 @@ Positive [article](https://medium.com/@addyosmani/totally-get-your-frustration-e
 
 [CSSmatic](http://www.cssmatic.com/)
 
+HTML, CSS & a bit of SASS [guide]](http://marksheet.io/)
+
 shayhowe HTML & CSS [tutorial](http://learn.shayhowe.com/html-css/)
 
 Grid system [tutorial](http://www.w3schools.com/css/css_rwd_mediaqueries.asp) used by Nomastew
