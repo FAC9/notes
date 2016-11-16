@@ -7,10 +7,16 @@ would help if you had an example to study at your own leisure.
 Under the hood this is something akin to the definition of `fs.readFile`:
 
 ```javascript
-fs.readFile = function(file, cb) {
+fs.readFile = function(file, encoding, cb) {
 
-  var readStream = fs.createReadStream(file);
+  var readStream;
   var fileContent = '';
+
+  if (encoding === 'utf-8') {
+    readStream = fs.createReadStream(file, 'utf-8');
+  } else {
+    readStream = fs.createReadStream(file);
+  }
 
   readStream.on('data', function(chunk) {
     fileContent += chunk;
@@ -56,7 +62,7 @@ plus(2, 2);
 
 This is `fs.readFile` in execution order:
 
-* A read stream is started on the file specified by the first argument of `fs.readFile`, which will read the file chunk by chunk. This is the asynchronous part, as we don't know how long this will take to finish.
+* A read stream is started on the file specified by the first argument of `fs.readFile`, which will read the file chunk by chunk. This is the asynchronous part, as we don't know how long this will take to finish. If an encoding argument is provided it will encode the readStream.
 * As each new chunk gets read the 'data' event fires appending that chunk to the `fileContent` variable.
 * Now a few things can happen. Either an 'error' event occurs (maybe the file specified doesn't exist, for example) and it triggers a function that executes the callback. The callback is now executed and control goes to it with the `Error` as the value of its first parameter `err`. We hit its first line `if (err) throw err`, it returns true and the error is thrown, and execution ends.
 * The other thing that can happen is the file is read successfully and the 'end' event is triggered. This runs a function which executes our callback, except this time the value of the first parameter is `null` and the value of the second is the `fileContent` variable, which contains the contents of the read file. `if (err) throw err` will return `false` and then `fileContent` will get `console.logged`.
