@@ -16,14 +16,14 @@
 ## JWT in database or not
 ![](./databases-or-not.jpg)
 ### With database
-Access token & username into database
-JWT to contain username
-Send request, including JWT (in cookie or authorisation header)
-Get response
-Query database using the username (stored in the JWT)
-Database returns access token
+- Access token & username into database
+- JWT to contain username
+- Send request, including JWT (in cookie or authorisation header)
+- Get response
+- Query database using the username (stored in the JWT)
+- Database returns access token
 
 ### Without database
-JWT to contain access token
-Send request, including JWT (in cookie or authorisation header)
-Get response, containing token
+- JWT to contain access token
+- Send request, including JWT (in cookie or authorisation header)
+- Get response, containing token
