@@ -1,5 +1,9 @@
-# OAuth Flow (Github example)
+# OAuth Project
+## General OAuth workflow:
+![](./oauth-flow.jpg)
 
+## OAuth workflow with project (Github) example
+![](./project-flow.jpg)
 1. Server serves homepage to browser
 2. Browser sends client_id & redirect_uri to Github
 3. Github sends code back to browser
@@ -9,7 +13,17 @@
 7. Server sends request to Github for more info (e.g. username) using the access token
 8. Github sends response to server
 
-![](./oauth-flow.jpg)
-
-# JWT in database or not
+## JWT in database or not
 ![](./databases-or-not.jpg)
+### With database
+Access token & username into database
+JWT to contain username
+Send request, including JWT (in cookie or authorisation header)
+Get response
+Query database using the username (stored in the JWT)
+Database returns access token
+
+### Without database
+JWT to contain access token
+Send request, including JWT (in cookie or authorisation header)
+Get response, containing token
