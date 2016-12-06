@@ -10,4 +10,6 @@
 8. Github sends response to server
 
 ![](./oauth-flow.jpg)
-# Back-end choices
+
+# JWT in database or not
+![](./databases-or-not.jpg)
