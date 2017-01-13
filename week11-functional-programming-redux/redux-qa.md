@@ -6,7 +6,7 @@ Q: Does anyone use Redux without React out there? Examples of such projects?
 - Redux sort of evolved alongside React, but its inspiration came from Elm
 - Redux is completely pure, there are no dependencies (unlike React)
 
-Q: When would you not use React?
+Q: When would you not use Redux?
 - Redux is good for single-page applications with many state changes; it’s not quite as helpful for many-page apps with fewer state changes
 
 Q: Can you use Redux on the back-end, e.g. with NodeJS?
