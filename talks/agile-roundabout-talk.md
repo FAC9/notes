@@ -63,6 +63,8 @@ Loved Kanban, wish we could have done it. But they didn't understand it. Scrum a
 
 
 ## Keeping your CI / CD pipeline as fast as it needs to be - Abraham Marin-Perez (Equal Experts)
+
+[Slides](http://www.slideshare.net/AbrahamMarinPerez/agile-roundabout-2017-01-keeping-your-cicd-system-as-fast-as-it-needs-to-be)
 ### Why you do this
 Problems of size:
 
