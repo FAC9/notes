@@ -95,13 +95,15 @@ Is our pipeline fast enough, or do we need to make it faster? "Fast enough" is a
 - Build time (BT): time an individual build takes to run (size of bubble)
 - Change rate e.g. 28%
 - Impact time (IT): total time
-  - single dependency - IT = BT
-  - serial execution - BT(A) + max(IT(B),IT(C))
-- Weighted impact time (WIT): impact time of a build according to its change rate - ???AIT = WIT/AT + WIT(B) ???
+  - single dependency - IT(A) = BT(A)
+  - serial execution - BT(A) + IT(B) + IT(C)
+  - parallel execution -IT(A) = BT(A) + max(IT(B), IT(C))
+- Weighted impact time - WIT(A) = IT(A) * CR(A): impact time of a build according to its change rate - ???AIT = WIT/AT + WIT(B) ???
+- Average impact time - AIT = WIT(A) + WIT(B) + ... + WIT(Z)
 
-**Simple thresholds**
-- Maximum impact time - worst case scenario e.g. doesn't take more than 45 mins
-Calculate total BT
+**Sample thresholds**
+- Average impact time - how well your system has scaled
+- Maximum impact time - worst case scenario e.g. doesn't take more than 45 mins  (calculate total BT)
 - Maximum impact time for critical things e.g. payment gateway vs whole website - tricky because of dependencies
 
 Manual processes take a lot of time (making the powerpoint node graph)
