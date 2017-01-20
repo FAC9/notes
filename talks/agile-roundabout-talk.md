@@ -1,6 +1,13 @@
 # Agile Roundabout
 
-## Agile in the Cloud - Daniel (Cloudreach)
+[First talk](#Agile-in-the-Cloud) - a brilliant example of someone who wants to be doing things in an Agile way, but struggles to communicate how Agile is beneficial to people with "old school attitudes"
+
+[Second talk](#Keeping-your-CI-/-CD-pipeline-as-fast-as-it-needs-to-be) - "Keeping your CI/CD pipeline as fast as it needs to be" **blew my mind**. Go straight to [this video](https://youtu.be/8JxoKJng_eQ). Abraham Marín Pérez's has [started making a tool](https://github.com/quiram/build-hotspots) for this:
+> "Build Hotspots is (or rather will be) a CI/CD visualisation tool that analyses build data and shows the builds that are run most often and how long they take in a graphical way; some people have described this as a "4D representation of the build system.""
+
+Found
+## Agile in the Cloud
+## Daniel (Cloudreach)
 
 What is the Cloud - not hosting yourself (in your datacentre or on a server)
 
@@ -62,7 +69,8 @@ Lack of Product Owners = a problem. They are the single point of contact that pr
 Loved Kanban, wish we could have done it. But they didn't understand it. Scrum allowed us to bridge that gap slightly. 2 weeks gave them a bit of confidence & built trust
 
 
-## Keeping your CI / CD pipeline as fast as it needs to be - Abraham Marin-Perez (Equal Experts)
+## Keeping your CI / CD pipeline as fast as it needs to be
+## Abraham Marin-Perez (Equal Experts)
 
 [Slides](http://www.slideshare.net/AbrahamMarinPerez/agile-roundabout-2017-01-keeping-your-cicd-system-as-fast-as-it-needs-to-be)
 ### Why you do this
