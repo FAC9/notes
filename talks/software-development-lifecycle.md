@@ -80,8 +80,6 @@ Sometimes we write some form of test, then write the code, and then write the ac
 
 ### Additional notes from Andy
 
->Hi Steve,
->
 >These are some notes I jotted down on my journey back, feel free to pass on to the group:
 >
 >I mentioned Sentry, there's also NewRelic, AppD and more, they're referred to as Real User Monitoring (RUM tools), a quick google will give more information, but it's critical we know the experience our customers are having!
