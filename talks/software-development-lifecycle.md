@@ -77,3 +77,21 @@ Majority of training is done on the fly, sitting with a senior engineer. Sky is 
 If not, "it's pretty much a no go". If you haven't written tests, go back and add them. The key thing is that you are thinking about it, even if you weren't from day one.
 
 Sometimes we write some form of test, then write the code, and then write the actual test. "We love it if people can write test-_driven_ development. But most people aren't really good at that."
+
+### Additional notes from Andy
+
+>Hi Steve,
+>
+>These are some notes I jotted down on my journey back, feel free to pass on to the group:
+>
+>I mentioned Sentry, there's also NewRelic, AppD and more, they're referred to as Real User Monitoring (RUM tools), a quick google will give more information, but it's critical we know the experience our customers are having!
+>
+>Companies also assess you as a person for culture fit, at Sky this is just as important as your ability to code. We're interested in your ability and hopefully willingness to learn - think of way to demonstrate or communicate this in interviews/assessments.
+>
+>If you do a coding exercise, ensure you explain your rationale, you don't always need to do TDD but you should write some tests!! We fail candidates for not writing a single one, we actually don't mind if you don't finish the exercise, we're evaluating your technical decision making, your ability to communicate, the tests you write and coverage. If you run short on time and don't complete the coding exercise explain what you would cover given more time and where you're planning to take the code or do next, this might be "red, green, refactor". Code needs to work doesn't need to be elegant on first attempt, if you know it works but could be written better given more time, make sure you say it and explain what you might do! Allows interviewers to assess your thought process.
+>
+>Don't know an answer? Don't blag it, be honest! This could be a way to demonstrate willingness to learn, you could explain very briefly how you might research or find the answer if given the job for example.
+>
+>Check out developers.sky.com for the developer blog. Checkout workforsky.com for technology jobs and links to software engineering academy, if you want to know more about work life balance/out campus there is stuff above but most staff use #lifeatsky on twitter to post pictures etc... suggest you look there too, then you don't need to just take my word that Sky is an awesome place to work!
+>
+>Thanks, Andrew
