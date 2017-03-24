@@ -1,5 +1,9 @@
-# A place to store and share FAC9's notes
+# FAC9
 
-Notes which are specific to a particular morning challenge, workshop or project can go inside the Week 1, Week2, etc folders.
-
-Otherwise, create a new folder for any new subject matter, so that we can try to keep this organised.
+One place for links to all things FAC9:
++ Links to each team's project
++ Readme day topics, with links to any presentations / repos that were created for it
++ Morning challenge solutions
++ Responsibilities - meetups & cleaning rotas
++ Resources shared on the gitter channel
++ Notes on talks by external speakers
