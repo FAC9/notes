@@ -3,7 +3,7 @@
 ## Week 1 - Toolkit
 + [Globe Town Devs](https://github.com/GlobeTownDevs/blog) - Lucy, Nick, Marina, Tom
 
-+ [Nomastew]((https://github.com/FAC9/nomastew-blog) - Nori, Marko, Steve, Ewelina
++ [Nomastew](https://github.com/FAC9/nomastew-blog) - Nori, Marko, Steve, Ewelina
 
 + [The Repos](https://github.com/FAC9/TheReposWebsite) - Emily, Peter, Shireen, Will
 
